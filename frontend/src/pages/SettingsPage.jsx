@@ -1,6 +1,13 @@
 import { THEMES, THEME_PREVIEWS } from "../constants";
 import { useThemeStore } from "../store/useThemeStore";
 
+const PREVIEW_MESSAGES =[
+  { id: 1, content:"Hey Howzit bro?", isSent: false},
+  { id: 2, content: "I'm great man can't complain. Just working on a new project.", isSent: true},
+
+];
+
+
 const SettingsPage = () => {
   const { theme, setTheme } = useThemeStore();
 
@@ -21,22 +28,22 @@ const SettingsPage = () => {
               `}
               onClick={() => setTheme(t)}
             >
-              <div className="relative w-full h-8 overflow-hidden rounded-md">
-                <div className="absolute inset-0 grid grid-cols-4 gap-px p-1">
-                  {(THEME_PREVIEWS[t] || []).map((color, i) => (
-                    <div key={i} className="rounded" style={{ backgroundColor: color }}></div>
-                  ))}
-                </div>
+              < div className="relative w-full h-8 overflow-hidden rounded-md " data-theme={t}>
+              < div className="absolute inset-0 grid grid-cols-4 gap-px p-1">
+              <div className="rounded bg-primary"></div>
+              <div className="rounded bg-secondary"></div>
+              <div className="rounded bg-accent"></div>
+              <div className="rounded bg-neutral"></div>
               </div>
-              <span className="text-[11px] font-medium truncate w-full text-center">
+              </div>
+             <span className="text-[11px] font-medium trucate w-full text-center">
                 {t.charAt(0).toUpperCase() + t.slice(1)}
               </span>
-            </button>
+              </button>
           ))}
         </div>
       </div>
     </div>
   );
 };
-
 export default SettingsPage;

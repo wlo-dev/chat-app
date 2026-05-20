@@ -1,4 +1,4 @@
-import { useState } from "react";  // ← added
+import { useState } from "react";  
 import { useAuthStore } from "../store/UseAuthStore";
 import { Camera, User, Mail } from "lucide-react";
 
