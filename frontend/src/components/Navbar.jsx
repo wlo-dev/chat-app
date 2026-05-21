@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
-import { useAuthStore } from "../store/UseAuthStore";
+import { useAuthStore } from "../store/UseAuthStore"; // ← lowercase 'use'
 import { LogOut, MessageSquare, Settings, User } from "lucide-react";
 
 const Navbar = () => {
-  const { logout, authUser } = useAuthStore();
+  const { logout, authUser } = useAuthStore(); // ← lowercase 'use'
 
   return (
     <header className="fixed top-0 z-40 w-full border-b bg-base-100 border-base-300 backdrop-blur-lg bg-base-100/80">
       <div className="container h-16 px-4 mx-auto">
         <div className="flex items-center justify-between h-full">
-          {/* Left side - Logo */}
           <div className="flex items-center gap-8">
             <Link to="/" className="flex items-center gap-2.5 hover:opacity-80 transition-all">
               <div className="flex items-center justify-center rounded-lg w-9 h-9 bg-primary/10">
@@ -19,7 +18,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Right side - Icons */}
           <div className="flex items-center gap-2">
             <Link to="/settings" className="gap-2 transition-colors btn btn-sm">
               <Settings className="w-4 h-4" />
