@@ -4,7 +4,8 @@ import {useChatStore} from "../store/useChatStore";
 import SidebarSkeleton from "./skeletons/SidebarSkeleton";
 const Sidebar = () => {
  const { getUsers, users,  setSelectedUser, isUsersLoading, selectedUser}=useChatStore()
-
+console.log("users:", users)
+console.log("isUsersLoading:", isUsersLoading)
  const onlineUsers = [];
 
  useEffect(() => {
