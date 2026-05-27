@@ -1,16 +1,17 @@
 import { create } from "zustand";
 import toast from "react-hot-toast";
-import { axiosInstance } from "../lib//axios";
+import { axiosInstance } from "../lib/axios";
 
 export const useChatStore =create((set) => ({
     message: [],
     users: [],
-    selectUser: null,
+    selectedUser: null,
     isUsersLoading: false,
     isMessageLoading: false,
 
-    getUser: async () => {
-        set({ isUserLoading: true });
+    getUsers: async () => {
+    
+        set({ isUsersLoading: true });
         try {
             const res =await axiosInstance.get("/users");
             set({ users: res.data });

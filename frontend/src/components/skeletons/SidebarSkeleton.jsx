@@ -1,4 +1,4 @@
-import { Users } from "lucid-react";
+import { Users } from "lucide-react";
 
 const SidebarSkeleton = () => {
     // creating skeleton items
@@ -33,3 +33,4 @@ const SidebarSkeleton = () => {
     )
 
 }
+ export default SidebarSkeleton;
