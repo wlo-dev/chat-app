@@ -1,9 +1,4 @@
-import React from 'react'
+import 
 
-const ChatHeader = () => {
-  return (
-    <div>ChatHeader</div>
-  )
-}
 
-export default ChatHeader
+export default ChatHeader;
