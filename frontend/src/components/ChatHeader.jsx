@@ -28,14 +28,11 @@ const ChatHeader = () => {
 
 {/* Close Button */}
 <button onClick={() => setSelectedUser(null)}>
-  
+
 </button>
-
-
-      </div>
-    </div>
+  </div>
+   </div>
   )
-} 
-
+};
 
 export default ChatHeader;
