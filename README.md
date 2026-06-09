@@ -29,7 +29,6 @@ There were plenty of moments where things broke in ways I didn't expect — Sock
 
 This project isn't perfect, but it's mine and I'm proud of how far it pushed me.
 
----
 
 ## Features
 
@@ -39,8 +38,6 @@ This project isn't perfect, but it's mine and I'm proud of how far it pushed me.
 - **Online indicators** — The app shows which users are currently active.
 - **Responsive layout** — Works on both desktop and mobile.
 - **Light / dark mode** — Theme switching via DaisyUI.
-
----
 
 ## Tech Stack
 
@@ -144,11 +141,6 @@ Feel free to open an issue or submit a pull request if you spot something or wan
 3. Commit — `git commit -m "feat: your change"`
 4. Push — `git push origin feature/your-feature`
 5. Open a Pull Request
-
----
-
-
----
 
 <div align="center">
 
