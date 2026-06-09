@@ -1,3 +1,17 @@
+
+
+## Overview
+
+Chattify is a real-time messaging app that lets users register, set up a profile, and chat with other users. It's one of my first full-stack projects, and honestly it was a proper learning curve from start to finish.
+
+Coming in mostly from the frontend side, I had to figure out a lot as I went — structuring a backend with Express, connecting to a database, handling authentication, and getting everything to actually talk to each other. One thing that stood out was using **Postman** for the first time to test my API endpoints. I hadn't used it before and at first it felt like a lot, but it ended up being really useful for checking that routes were working before the frontend was even set up. It also helped me understand HTTP methods and middleware a lot better than just reading about them would have.
+
+There were plenty of moments where things broke in ways I didn't expect — Socket.io not delivering messages, Cloudinary throwing auth errors, MongoDB connection strings causing issues depending on the environment, and a fair amount of Zustand and React Router debugging on the frontend. Each one of those was frustrating at the time but taught me something I wouldn't have picked up otherwise.
+
+This project isn't perfect, but it's mine and I'm proud of how far it pushed me.
+
+
+
 <div align="center">
 
 # 💬 Chattify
@@ -17,17 +31,6 @@
 
 </div>
 
----
-
-## Overview
-
-Chattify is a real-time messaging app that lets users register, set up a profile, and chat with other users. It's one of my first full-stack projects, and honestly it was a proper learning curve from start to finish.
-
-Coming in mostly from the frontend side, I had to figure out a lot as I went — structuring a backend with Express, connecting to a database, handling authentication, and getting everything to actually talk to each other. One thing that stood out was using **Postman** for the first time to test my API endpoints. I hadn't used it before and at first it felt like a lot, but it ended up being really useful for checking that routes were working before the frontend was even set up. It also helped me understand HTTP methods and middleware a lot better than just reading about them would have.
-
-There were plenty of moments where things broke in ways I didn't expect — Socket.io not delivering messages, Cloudinary throwing auth errors, MongoDB connection strings causing issues depending on the environment, and a fair amount of Zustand and React Router debugging on the frontend. Each one of those was frustrating at the time but taught me something I wouldn't have picked up otherwise.
-
-This project isn't perfect, but it's mine and I'm proud of how far it pushed me.
 
 
 ## Features
