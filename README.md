@@ -147,9 +147,6 @@ Feel free to open an issue or submit a pull request if you spot something or wan
 
 ---
 
-## License
-
-MIT — see [`LICENSE`](LICENSE) for details.
 
 ---
 
